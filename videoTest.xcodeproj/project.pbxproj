@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2586B77F1EC6E1710065B718 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2586B77E1EC6E1710065B718 /* AppDelegate.swift */; };
+		2586B7811EC6E1710065B718 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2586B7801EC6E1710065B718 /* ViewController.swift */; };
+		2586B7841EC6E1710065B718 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2586B7821EC6E1710065B718 /* Main.storyboard */; };
+		2586B7861EC6E1710065B718 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2586B7851EC6E1710065B718 /* Assets.xcassets */; };
+		2586B7891EC6E1710065B718 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2586B7871EC6E1710065B718 /* LaunchScreen.storyboard */; };
+		2586B7941EC6E1710065B718 /* videoTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2586B7931EC6E1710065B718 /* videoTestTests.swift */; };
+		2586B79F1EC6E1710065B718 /* videoTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2586B79E1EC6E1710065B718 /* videoTestUITests.swift */; };
+		2586B7AD1EC6E1BA0065B718 /* AWARD WINNING Best Short Video - Share... Care... Joy...  - By Naik Foundation.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2586B7AC1EC6E1BA0065B718 /* AWARD WINNING Best Short Video - Share... Care... Joy...  - By Naik Foundation.mp4 */; };
+		2586B7B11EC6E42D0065B718 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2586B7AF1EC6E42D0065B718 /* AVFoundation.framework */; };
+		2586B7B21EC6E42D0065B718 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2586B7B01EC6E42D0065B718 /* AVKit.framework */; };
+		2586B7B41EC70A360065B718 /* videoLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2586B7B31EC70A360065B718 /* videoLaunch.swift */; };
+		A218626E22B65C9800745A14 /* extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A218626D22B65C9800745A14 /* extentions.swift */; };
+		A218627022B663BF00745A14 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A218626F22B663BF00745A14 /* SecondVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2586B7901EC6E1710065B718 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2586B7731EC6E1710065B718 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2586B77A1EC6E1710065B718;
+			remoteInfo = videoTest;
+		};
+		2586B79B1EC6E1710065B718 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2586B7731EC6E1710065B718 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2586B77A1EC6E1710065B718;
+			remoteInfo = videoTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2586B77B1EC6E1710065B718 /* videoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = videoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2586B77E1EC6E1710065B718 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2586B7801EC6E1710065B718 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2586B7831EC6E1710065B718 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2586B7851EC6E1710065B718 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2586B7881EC6E1710065B718 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2586B78A1EC6E1710065B718 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2586B78F1EC6E1710065B718 /* videoTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = videoTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2586B7931EC6E1710065B718 /* videoTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = videoTestTests.swift; sourceTree = "<group>"; };
+		2586B7951EC6E1710065B718 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2586B79A1EC6E1710065B718 /* videoTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = videoTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2586B79E1EC6E1710065B718 /* videoTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = videoTestUITests.swift; sourceTree = "<group>"; };
+		2586B7A01EC6E1710065B718 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2586B7AC1EC6E1BA0065B718 /* AWARD WINNING Best Short Video - Share... Care... Joy...  - By Naik Foundation.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AWARD WINNING Best Short Video - Share... Care... Joy...  - By Naik Foundation.mp4"; sourceTree = "<group>"; };
+		2586B7AF1EC6E42D0065B718 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2586B7B01EC6E42D0065B718 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		2586B7B31EC70A360065B718 /* videoLaunch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = videoLaunch.swift; sourceTree = "<group>"; };
+		A218626D22B65C9800745A14 /* extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extentions.swift; sourceTree = "<group>"; };
+		A218626F22B663BF00745A14 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2586B7781EC6E1710065B718 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2586B7B11EC6E42D0065B718 /* AVFoundation.framework in Frameworks */,
+				2586B7B21EC6E42D0065B718 /* AVKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2586B78C1EC6E1710065B718 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2586B7971EC6E1710065B718 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2586B7721EC6E1710065B718 = {
+			isa = PBXGroup;
+			children = (
+				2586B77D1EC6E1710065B718 /* videoTest */,
+				2586B7921EC6E1710065B718 /* videoTestTests */,
+				2586B79D1EC6E1710065B718 /* videoTestUITests */,
+				2586B77C1EC6E1710065B718 /* Products */,
+				2586B7AE1EC6E42D0065B718 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2586B77C1EC6E1710065B718 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2586B77B1EC6E1710065B718 /* videoTest.app */,
+				2586B78F1EC6E1710065B718 /* videoTestTests.xctest */,
+				2586B79A1EC6E1710065B718 /* videoTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2586B77D1EC6E1710065B718 /* videoTest */ = {
+			isa = PBXGroup;
+			children = (
+				2586B77E1EC6E1710065B718 /* AppDelegate.swift */,
+				2586B7801EC6E1710065B718 /* ViewController.swift */,
+				2586B7821EC6E1710065B718 /* Main.storyboard */,
+				2586B7851EC6E1710065B718 /* Assets.xcassets */,
+				2586B7871EC6E1710065B718 /* LaunchScreen.storyboard */,
+				2586B78A1EC6E1710065B718 /* Info.plist */,
+				2586B7AC1EC6E1BA0065B718 /* AWARD WINNING Best Short Video - Share... Care... Joy...  - By Naik Foundation.mp4 */,
+				2586B7B31EC70A360065B718 /* videoLaunch.swift */,
+				A218626D22B65C9800745A14 /* extentions.swift */,
+				A218626F22B663BF00745A14 /* SecondVC.swift */,
+			);
+			path = videoTest;
+			sourceTree = "<group>";
+		};
+		2586B7921EC6E1710065B718 /* videoTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				2586B7931EC6E1710065B718 /* videoTestTests.swift */,
+				2586B7951EC6E1710065B718 /* Info.plist */,
+			);
+			path = videoTestTests;
+			sourceTree = "<group>";
+		};
+		2586B79D1EC6E1710065B718 /* videoTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2586B79E1EC6E1710065B718 /* videoTestUITests.swift */,
+				2586B7A01EC6E1710065B718 /* Info.plist */,
+			);
+			path = videoTestUITests;
+			sourceTree = "<group>";
+		};
+		2586B7AE1EC6E42D0065B718 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2586B7AF1EC6E42D0065B718 /* AVFoundation.framework */,
+				2586B7B01EC6E42D0065B718 /* AVKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2586B77A1EC6E1710065B718 /* videoTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2586B7A31EC6E1710065B718 /* Build configuration list for PBXNativeTarget "videoTest" */;
+			buildPhases = (
+				2586B7771EC6E1710065B718 /* Sources */,
+				2586B7781EC6E1710065B718 /* Frameworks */,
+				2586B7791EC6E1710065B718 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = videoTest;
+			productName = videoTest;
+			productReference = 2586B77B1EC6E1710065B718 /* videoTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2586B78E1EC6E1710065B718 /* videoTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2586B7A61EC6E1710065B718 /* Build configuration list for PBXNativeTarget "videoTestTests" */;
+			buildPhases = (
+				2586B78B1EC6E1710065B718 /* Sources */,
+				2586B78C1EC6E1710065B718 /* Frameworks */,
+				2586B78D1EC6E1710065B718 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2586B7911EC6E1710065B718 /* PBXTargetDependency */,
+			);
+			name = videoTestTests;
+			productName = videoTestTests;
+			productReference = 2586B78F1EC6E1710065B718 /* videoTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2586B7991EC6E1710065B718 /* videoTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2586B7A91EC6E1710065B718 /* Build configuration list for PBXNativeTarget "videoTestUITests" */;
+			buildPhases = (
+				2586B7961EC6E1710065B718 /* Sources */,
+				2586B7971EC6E1710065B718 /* Frameworks */,
+				2586B7981EC6E1710065B718 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2586B79C1EC6E1710065B718 /* PBXTargetDependency */,
+			);
+			name = videoTestUITests;
+			productName = videoTestUITests;
+			productReference = 2586B79A1EC6E1710065B718 /* videoTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2586B7731EC6E1710065B718 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Rumy;
+				TargetAttributes = {
+					2586B77A1EC6E1710065B718 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = CQQ6PB6QNX;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
+					};
+					2586B78E1EC6E1710065B718 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = PV5UBBA7V9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2586B77A1EC6E1710065B718;
+					};
+					2586B7991EC6E1710065B718 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = PV5UBBA7V9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2586B77A1EC6E1710065B718;
+					};
+				};
+			};
+			buildConfigurationList = 2586B7761EC6E1710065B718 /* Build configuration list for PBXProject "videoTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 2586B7721EC6E1710065B718;
+			productRefGroup = 2586B77C1EC6E1710065B718 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2586B77A1EC6E1710065B718 /* videoTest */,
+				2586B78E1EC6E1710065B718 /* videoTestTests */,
+				2586B7991EC6E1710065B718 /* videoTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2586B7791EC6E1710065B718 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2586B7AD1EC6E1BA0065B718 /* AWARD WINNING Best Short Video - Share... Care... Joy...  - By Naik Foundation.mp4 in Resources */,
+				2586B7891EC6E1710065B718 /* LaunchScreen.storyboard in Resources */,
+				2586B7861EC6E1710065B718 /* Assets.xcassets in Resources */,
+				2586B7841EC6E1710065B718 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2586B78D1EC6E1710065B718 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2586B7981EC6E1710065B718 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2586B7771EC6E1710065B718 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A218626E22B65C9800745A14 /* extentions.swift in Sources */,
+				A218627022B663BF00745A14 /* SecondVC.swift in Sources */,
+				2586B7811EC6E1710065B718 /* ViewController.swift in Sources */,
+				2586B77F1EC6E1710065B718 /* AppDelegate.swift in Sources */,
+				2586B7B41EC70A360065B718 /* videoLaunch.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2586B78B1EC6E1710065B718 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2586B7941EC6E1710065B718 /* videoTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2586B7961EC6E1710065B718 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2586B79F1EC6E1710065B718 /* videoTestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2586B7911EC6E1710065B718 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2586B77A1EC6E1710065B718 /* videoTest */;
+			targetProxy = 2586B7901EC6E1710065B718 /* PBXContainerItemProxy */;
+		};
+		2586B79C1EC6E1710065B718 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2586B77A1EC6E1710065B718 /* videoTest */;
+			targetProxy = 2586B79B1EC6E1710065B718 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2586B7821EC6E1710065B718 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2586B7831EC6E1710065B718 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2586B7871EC6E1710065B718 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2586B7881EC6E1710065B718 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2586B7A11EC6E1710065B718 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2586B7A21EC6E1710065B718 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2586B7A41EC6E1710065B718 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CQQ6PB6QNX;
+				INFOPLIST_FILE = videoTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Rumy.iOS.videoTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2586B7A51EC6E1710065B718 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CQQ6PB6QNX;
+				INFOPLIST_FILE = videoTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Rumy.iOS.videoTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		2586B7A71EC6E1710065B718 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = PV5UBBA7V9;
+				INFOPLIST_FILE = videoTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Rumy.iOS.videoTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/videoTest.app/videoTest";
+			};
+			name = Debug;
+		};
+		2586B7A81EC6E1710065B718 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = PV5UBBA7V9;
+				INFOPLIST_FILE = videoTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Rumy.iOS.videoTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/videoTest.app/videoTest";
+			};
+			name = Release;
+		};
+		2586B7AA1EC6E1710065B718 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = PV5UBBA7V9;
+				INFOPLIST_FILE = videoTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Rumy.iOS.videoTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = videoTest;
+			};
+			name = Debug;
+		};
+		2586B7AB1EC6E1710065B718 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = PV5UBBA7V9;
+				INFOPLIST_FILE = videoTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Rumy.iOS.videoTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = videoTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2586B7761EC6E1710065B718 /* Build configuration list for PBXProject "videoTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2586B7A11EC6E1710065B718 /* Debug */,
+				2586B7A21EC6E1710065B718 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2586B7A31EC6E1710065B718 /* Build configuration list for PBXNativeTarget "videoTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2586B7A41EC6E1710065B718 /* Debug */,
+				2586B7A51EC6E1710065B718 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2586B7A61EC6E1710065B718 /* Build configuration list for PBXNativeTarget "videoTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2586B7A71EC6E1710065B718 /* Debug */,
+				2586B7A81EC6E1710065B718 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2586B7A91EC6E1710065B718 /* Build configuration list for PBXNativeTarget "videoTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2586B7AA1EC6E1710065B718 /* Debug */,
+				2586B7AB1EC6E1710065B718 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2586B7731EC6E1710065B718 /* Project object */;
+}

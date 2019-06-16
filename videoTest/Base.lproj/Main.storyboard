@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="videoTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BiJ-Lp-imX">
+                                <rect key="frame" x="20" y="44" width="374" height="250"/>
+                                <state key="normal" title="PLAY VIDEO"/>
+                                <connections>
+                                    <action selector="playVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fcV-kf-ouQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKL-cp-WXs">
+                                <rect key="frame" x="140" y="302" width="135" height="30"/>
+                                <state key="normal" title="go in other"/>
+                                <connections>
+                                    <segue destination="MOv-jw-H41" kind="show" id="Bio-HA-tlW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BiJ-Lp-imX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5S7-5V-n6B"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xKL-cp-WXs" secondAttribute="trailing" constant="119" id="8Nb-CT-wi3"/>
+                            <constraint firstItem="xKL-cp-WXs" firstAttribute="top" secondItem="BiJ-Lp-imX" secondAttribute="bottom" constant="8" id="JJM-Kq-rwv"/>
+                            <constraint firstItem="xKL-cp-WXs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="120" id="fgY-FM-dcm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xKL-cp-WXs" secondAttribute="bottom" constant="530" id="gBq-zN-Wz0"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BiJ-Lp-imX" secondAttribute="bottom" constant="568" id="iPm-r2-bnr"/>
+                            <constraint firstItem="BiJ-Lp-imX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="iwX-eQ-Ppn"/>
+                            <constraint firstItem="BiJ-Lp-imX" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="u7u-oc-SUX"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+        <!--SecondVC-->
+        <scene sceneID="JFK-HV-jB5">
+            <objects>
+                <viewController id="MOv-jw-H41" customClass="SecondVC" customModule="videoTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yKn-ZH-fic"/>
+                        <viewControllerLayoutGuide type="bottom" id="NUo-HT-eit"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NEE-Sq-PJz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="OTHER VIEW CONTROLLER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VUS-k7-VaD">
+                                <rect key="frame" x="52" y="165" width="270" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0F-Cf-3Hr">
+                                <rect key="frame" x="28" y="52" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="backClicked:" destination="MOv-jw-H41" eventType="touchUpInside" id="8yX-wb-A6f"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.79757684470000001" green="0.0" blue="0.36287921670000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="e0F-Cf-3Hr" firstAttribute="leading" secondItem="NEE-Sq-PJz" secondAttribute="leadingMargin" constant="8" id="Jhy-b3-1XL"/>
+                            <constraint firstItem="e0F-Cf-3Hr" firstAttribute="top" secondItem="yKn-ZH-fic" secondAttribute="bottom" constant="8" id="U7R-lg-IfZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SLV-xv-UsM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="796" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>
