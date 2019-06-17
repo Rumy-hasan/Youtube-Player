@@ -231,13 +231,13 @@
 					};
 					2586B78E1EC6E1710065B718 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = PV5UBBA7V9;
+						DevelopmentTeam = CQQ6PB6QNX;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2586B77A1EC6E1710065B718;
 					};
 					2586B7991EC6E1710065B718 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = PV5UBBA7V9;
+						DevelopmentTeam = CQQ6PB6QNX;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2586B77A1EC6E1710065B718;
 					};
@@ -478,12 +478,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = PV5UBBA7V9;
+				DEVELOPMENT_TEAM = CQQ6PB6QNX;
 				INFOPLIST_FILE = videoTestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Rumy.iOS.videoTestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/videoTest.app/videoTest";
 			};
 			name = Debug;
@@ -493,12 +493,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = PV5UBBA7V9;
+				DEVELOPMENT_TEAM = CQQ6PB6QNX;
 				INFOPLIST_FILE = videoTestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Rumy.iOS.videoTestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/videoTest.app/videoTest";
 			};
 			name = Release;
@@ -507,12 +507,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = PV5UBBA7V9;
+				DEVELOPMENT_TEAM = CQQ6PB6QNX;
 				INFOPLIST_FILE = videoTestUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Rumy.iOS.videoTestUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = videoTest;
 			};
 			name = Debug;
@@ -521,12 +521,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = PV5UBBA7V9;
+				DEVELOPMENT_TEAM = CQQ6PB6QNX;
 				INFOPLIST_FILE = videoTestUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Rumy.iOS.videoTestUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = videoTest;
 			};
 			name = Release;

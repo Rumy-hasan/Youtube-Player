@@ -37,8 +37,6 @@ class VideoPlayerView: UIView {
     }()
     
     
-    
-    
     var isPlaying = false
     
     @objc func handlePause(){
@@ -60,7 +58,6 @@ class VideoPlayerView: UIView {
         button.translatesAutoresizingMaskIntoConstraints = false
         button.tintColor = .white
         button.addTarget(self, action: #selector(dropDown), for: .touchUpInside)
-        //button.isHidden = true
         return button
     }()
     
@@ -68,20 +65,20 @@ class VideoPlayerView: UIView {
     
     
     @objc func dropDown(){
+        guard let mainView = self.superview as? videoLaunch else{
+            return
+        }
        if isDropDown{
         UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseOut, animations: {
             mainView.frame = (UIApplication.shared.keyWindow?.frame)!
             mainView.gestureRecognizers?.removeAll()
             }, completion: { (completedAnimation) in
-                
         })
         dropDownButton.setImage(UIImage(named: "down"), for: .normal)
        }else{
             UIView.animate(withDuration: 0.5, animations: { 
                 let height = (UIApplication.shared.keyWindow?.frame.width)! * 9 / 16
-                //view.frame = tem.frame
-                view.frame = CGRect(x: 50 , y: (UIApplication.shared.keyWindow?.frame.height)! - height, width: (UIApplication.shared.keyWindow?.frame.width)! - 50, height: height)
-                
+                mainView.frame = CGRect(x: 50 , y: (UIApplication.shared.keyWindow?.frame.height)! - height, width: (UIApplication.shared.keyWindow?.frame.width)! - 50, height: height)
                 let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(self.handleSwipes(_:)))
                 leftSwipe.direction = .left
                 mainView.addGestureRecognizer(leftSwipe)
@@ -95,12 +92,11 @@ class VideoPlayerView: UIView {
     @objc func handleSwipes(_ sender:UISwipeGestureRecognizer)
     {
         if let keyWindow = UIApplication.shared.keyWindow{
-            if let playerView = keyWindow.viewWithTag(100){
+            if let playerView = keyWindow.viewWithTag(100) as? videoLaunch{
                 playerView.removeFromSuperview()
                 if self.player!.isPlaying{
                     self.player?.pause()
                 }
-                //playerView = nil
             }
         }
     }
@@ -271,35 +267,30 @@ class VideoPlayerView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 }
-var tem = UIView()
-var view = UIView()
-var mainView = UIView()
+//var tem = UIView()
+//var view = UIView()
+//var mainView = UIView()
 
 class videoLaunch: UIView {
     var videoPlayerView: VideoPlayerView? = nil
     func showVideoPlayer(){
         if let keyWindow = UIApplication.shared.keyWindow{
-            view = UIView(frame: keyWindow.frame)
-            view.backgroundColor = UIColor.black
-            view.frame = CGRect(x: keyWindow.frame.width - 10, y: keyWindow.frame.height - 10, width: 10, height: 10)
+            //self.frame = keyWindow.frame
+            self.backgroundColor = UIColor.black
+            self.frame = CGRect(x: keyWindow.frame.width - 10, y: keyWindow.frame.height - 10, width: 10, height: 10)
             
             let height = keyWindow.frame.width * 9 / 16
             let videoPlayerFrame = CGRect(x: 0, y: 0, width: keyWindow.frame.width, height: height)
             videoPlayerView = VideoPlayerView(frame: videoPlayerFrame)
             
+            self.addSubview(videoPlayerView!)
             
-            tem = videoPlayerView!
-            view.addSubview(videoPlayerView!)
-            
-            mainView = view
-            mainView.tag = 100
-            keyWindow.addSubview(view)
+            self.tag = 100
+            keyWindow.addSubview(self)
             UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseOut, animations: { 
-                view.frame = keyWindow.frame
+                self.frame = keyWindow.frame
                 }, completion: { (completedAnimation) in
-                    
             })
-        
         }
     }
     
